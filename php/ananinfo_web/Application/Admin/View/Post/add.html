@@ -1,0 +1,82 @@
+<include file="Public/header" />
+<include file="Public/left" />
+<div class="container-fluid">
+<div class="row-fluid">
+	<div class="span9" id="content">
+	 <!-- validation -->
+		<div class="row-fluid">
+		     <!-- block -->
+		    <div class="block">
+		        <div class="navbar navbar-inner block-header">
+		            <div class="muted pull-left">增加帖子内容</div>
+		        </div>
+		        <div class="block-content collapse in">
+		            <div class="span12">
+						<!-- BEGIN FORM-->
+						<form action="/admin.php?c=Post&a=add&menuid={$menuid}" id="form_sample_1" class="form-horizontal" 
+						enctype="multipart/form-data"  method="post">
+							<fieldset>
+								<div class="control-group">
+									<label class="control-label">标题<span class="required">*</span></label>
+									<div class="controls">
+										<input type="text" name="title" data-required="1" class="span6 m-wrap"/>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">封面图片<span class="required">*</span></label>
+									<div class="controls">
+										<input type="file" name="img_cover" data-required="1" class="span6 m-wrap"/>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">是否热门</label>
+									<div class="controls">
+										<label class="radio-inline">
+											<input type="radio" name="hot" id="hot" value="1" checked>热门 
+											<input type="radio" name="hot" id="hot" value="2" >非热门
+										</label>
+									</div>
+								</div>
+								<div class="control-group">
+                                          <label class="control-label" for="textarea2">描述</label>
+                                          <div class="controls">
+                                            <textarea  name = 'describe' placeholder="Enter text ..." style="width: 810px; height: 100px"></textarea>
+                                          </div>
+                                        </div>	
+								</fieldset>
+
+						   <div class="block">
+						        <div class="navbar navbar-inner block-header">
+						            <div class="muted pull-left">内容编辑(CKEditor)</div>
+						        </div>
+						        <div class="block-content collapse in">
+						           <textarea name = "ckeditor_content" id="ckeditor_content"></textarea>
+						        </div>
+						    </div>
+						    <div class="form-actions">
+								<button type="submit" class="btn btn-primary">提交</button>
+								<a type="button" class="btn" href="/?c=Post&a=index&menuid={$menuid}">取消</a>
+							</div>
+						</form>
+						<!-- END FORM-->
+					</div>
+				</div>
+			</div>
+		 	<!-- /block -->
+			
+		</div>
+	</div>
+</div>
+<script>
+	// jQuery(document).ready(function() {   
+	// 	   FormValidation.init();
+	// 	});
+	$(function() {
+		$('.textarea').wysihtml5();
+	    $( 'textarea#ckeditor_content' ).ckeditor({width:'98%', height: '600px',
+	    	//filebrowserImageUploadUrl:'/admin.php?c=Post&a=CKEditorUpload'});
+	    	filebrowserImageUploadUrl:"{:getNavUrlEx('Post','CKEditorUpload','')}"});
+	});
+</script>
+
+<include file="Public/footer" />

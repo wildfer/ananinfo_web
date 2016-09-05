@@ -1,0 +1,61 @@
+<include file="Public/header" />
+<include file="Public/left" />
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span9" id="content">
+    	<div class="row-fluid">
+    		<div class="block">
+                <div class="navbar navbar-inner block-header">
+                    <div class="muted pull-left">内容列表</div>
+                </div>
+                <div class="block-content collapse in">
+                    <div class="span12">
+                       <div class="table-toolbar">
+                          <div class="btn-group">
+                             <a href={:getNavUrlEx('Post','initAdd',$menuid)}>
+                             <button class="btn btn-success">新增<i class="icon-plus icon-white"></i></button></a>
+                          </div>
+                       </div>
+                        
+                        <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example2">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>UID</th>
+                                    <th>标题</th>
+                                    <th>帖子状态</th>
+                                    <th>发布时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <volist name="postArr" id="postid">
+                                    <tr class="gradeA">
+                                        <td>{$postid.id}</td>
+                                        <td>{$postid.uid}</td>
+                                        <td>{$postid.title}</td>
+                                        <td>{$postid.status}</td>
+                                        <td>{$postid.create_date}</td>
+                                        <td>
+                                          <button class="btn btn-mini">编辑</button>
+                                          <button class="btn btn-mini">预览</button>
+                                          <button class="btn btn-warning btn-mini">发布</button>
+                                          <button class="btn btn-danger btn-mini">禁用</button>
+                                        </td>
+                                    </tr>
+                                </volist>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    	</div>
+    </div>
+  </div>
+</div>
+<script>
+$(function() {
+  
+});
+</script>
+<include file="Public/footer" />

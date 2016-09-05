@@ -1,0 +1,146 @@
+body{
+	font-family: "微软雅黑", "Microsoft YaHei";
+}
+.st-fs-banner{
+	height: 507px;
+	background: url("../images/bg-banner.jpg") no-repeat center top;
+}
+.st-fs-wrap{
+	overflow: visible;
+	background: #ebf2f2;
+}
+.st-fs-main{
+	width: 1200px;
+	margin: 20px auto 0px;
+}
+.st-fs-goods-list{
+	margin-right: -20px;
+	margin-bottom: -20px;
+}
+.st-fs-goods-list li{
+	background: #ffffff;
+	width: 285px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.st-fs-goods-pic{
+	max-height: 240px;
+	max-width: 280px;
+	line-height: 243px;
+	vertical-align: middle;
+	text-align: center;
+	display: block;
+}
+.st-fs-goods-pic img{
+	vertical-align: middle;
+	max-width:250px;
+	max-height:200px;
+}
+.st-fs-goods-name{
+	width: 242px;
+	margin: 0 auto;
+	height: 44px;
+	line-height: 22px;
+	overflow: hidden;
+}
+.st-fs-goods-name a{
+	font-size: 14px;
+	color: #969696;
+}
+.st-fs-goods-name a:hover{
+	text-decoration: underline;
+}
+.st-fs-goods-price{
+	border-top: 1px solid #c8c8c8;
+	position: relative;
+	margin-top: 15px;
+	padding: 0px 20px;
+}
+.st-fs-st-price{
+	color: #e27296;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.st-fs-st-price span{
+	display: block;
+}
+.st-fs-st-price strong{
+	font-size: 25px;
+	font-weight: bold;
+}
+.st-fs-normal-price{
+	font-size: 13px;
+	color: #999;
+	text-decoration: line-through;
+	margin-bottom: 20px;
+	height: 20px;
+}
+.st-fs-buy-btn{
+	position: absolute;
+	width: 51px;
+	height: 67px;
+	background: url("/static/v2/images/btn-buy.png") no-repeat;
+	top: 0px;
+	right: 20px;
+}
+.st-topic-count-wrap{
+	width: 1200px;
+	margin: 10px auto;
+}
+.st-topic-countdown{
+	height: 109px;
+	background: #b9966a;
+	overflow: hidden;
+}
+.st-topic-countdown h2{
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	margin-top: 8px;
+	margin-bottom: 2px;
+}
+.st-topic-countdown p{
+	color: #ffffff;
+	font-size: 42px;
+	text-align: center;
+}
+.st-topic-countdown p em{
+	font-style: normal;
+	color: #e41243;
+	font-weight: bold;
+	margin-left: 25px;
+	margin-right: 6px;
+}
+.st-topic-countdown p em:first-child{
+	margin-left: 0px;
+}
+.st-topic-info-wrap{
+	background: #ffffff;
+}
+.st-topic-info-wrap img{
+	width: 80px;
+	float: left;
+	margin-left: 13px;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+.st-topic-info{
+	float: left;
+	margin-left: 11px;
+	margin-top: 13px;
+}
+.st-topic-info p em{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #362a2a;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+.st-topic-info p{
+	font-size: 14px;
+	color: #949494;
+	height: 25px;
+}

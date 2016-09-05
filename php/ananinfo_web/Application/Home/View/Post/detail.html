@@ -1,0 +1,106 @@
+<include file="Public/header" />
+<section id="page-breadcrumb">
+    <div class="vertical-center sun">
+         <div class="container">
+            <div class="row">
+                <div class="action">
+                    <div class="col-sm-12">
+                        <h1 class="title">Blog Details</h1>
+                        <p>Blog with right sidebar</p>
+                    </div>                                                                                
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#page-breadcrumb-->
+
+<section id="blog-details" class="padding-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-7">
+                <div class="row">
+                     <div class="col-md-12 col-sm-12">
+                        <div class="single-blog blog-details two-column">
+                            
+                            <div class="post-content overflow">
+                                <h2 class="post-title bold"><a href="#">{$postDetail.title}</a></h2>
+                                <h3 class="post-author"><a href="#">{$postDetail.descirbe}</a></h3>
+                                <p>{$postDetail.content}</p>
+                                <div class="post-bottom overflow">
+                                    <ul class="nav navbar-nav post-nav">
+                                        <li><a><i class="fa fa-tag"></i>{$postDetail.view_count} 查看</a></li>
+                                        <li><a><i class="fa fa-heart"></i>{$postDetail.like_count} 赞</a></li>
+                                        <li><a href="#"><i class="fa fa-comments"></i>{$postDetail.comment_count} 评论</a></li>
+                                    </ul>
+                                </div>
+                                <div class="blog-share">
+                                    <span>分享：</span>
+                                    <span class='st_facebook_hcount'></span>
+                                    <span class='st_twitter_hcount'></span>
+                                    <span class='st_linkedin_hcount'></span>
+                                    <span class='st_pinterest_hcount'></span>
+                                    <span class='st_email_hcount'></span>
+                                </div>
+                                <div class="response-area">
+                                <h2 class="bold">Comments</h2>
+                                <ul class="media-list">
+
+                                    <volist name="commentArr" id="v">
+                                         <li class="media">
+                                            <div class="post-comment">
+                                                <div class="media-body">
+                                                    <span><i class="fa fa-user"></i>网友<a href="#">{$v.comment_user_id}</a></span>
+                                                    <p>{$v.comment_content}</p>
+                                                    <ul class="nav navbar-nav post-nav">
+                                                        <li><i class="fa fa-clock-o"></i>{$v.comment_date}</li>
+                                                        <li><a href="#"><i class="fa fa-reply"></i>回复</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </volist>
+                                </ul>                   
+                            </div><!--/Response-area-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="col-md-3 col-sm-5">
+                <div class="sidebar blog-sidebar">
+                    <div class="sidebar-item  recent">
+                        <h3>Comments</h3>
+                        <div class="media">
+                            <div class="media-body">
+                                <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>
+                                <p>posted on  07 March 2014</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-body">
+                                <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>
+                                <p>posted on  07 March 2014</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="sidebar-item categories">
+                        <h3>Categories</h3>
+                        <ul class="nav navbar-stacked">
+                            <li><a href="#">Lorem ipsum<span class="pull-right">(1)</span></a></li>
+                            <li class="active"><a href="#">Dolor sit amet<span class="pull-right">(8)</span></a></li>
+                            <li><a href="#">Adipisicing elit<span class="pull-right">(4)</span></a></li>
+                            <li><a href="#">Sed do<span class="pull-right">(9)</span></a></li>
+                            <li><a href="#">Eiusmod<span class="pull-right">(3)</span></a></li>
+                            <li><a href="#">Mockup<span class="pull-right">(4)</span></a></li>
+                            <li><a href="#">Ut enim ad minim <span class="pull-right">(2)</span></a></li>
+                            <li><a href="#">Veniam, quis nostrud <span class="pull-right">(8)</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<include file="Public/footer" />

@@ -1,0 +1,268 @@
+.header{
+	min-width: 1200px;
+	background: #ffffff;
+	padding-bottom: 6px;
+}
+.header-top-wrap{
+	border-bottom: 1px solid #eeeeee;
+}
+.header-top-bar {
+	overflow: hidden;
+	padding:8px 0px!important;
+	width: 1200px;
+	margin: 0 auto!important;
+}
+.mobile{
+	color: #656565;
+}
+.icon-mobile{
+	background:url("../img/mobile.png") no-repeat;
+	display: inline-block;
+	height: 14px;
+	margin-right: 4px;
+	vertical-align: -2px;
+	width: 9px;
+	float: left;
+	margin-top: 2px;
+}
+.header-top-bar p.p-mobile{
+	float: left;
+	color: #626161;
+}
+.header-top-bar ul{
+	float: right;
+}
+.header-top-bar ul li{
+	float: left;
+	margin-left: 30px;
+	height: 18px;
+}
+.header-top-bar ul li.reg{
+	margin-left: 25px;
+}
+.header-top-bar ul li.reg a{
+	color: #e4393c;
+}
+.header-top-bar ul li.cart{
+	background: url("../img/icon_cart.png") no-repeat;
+	padding-left: 19px;
+}
+.header-top-bar ul li a{
+	text-decoration: none;
+	color: #626161;
+}
+.header-top-bar ul li a.notice{
+	color: #e4393c;
+	display: inline-block;
+	line-height: 14px;
+	height: 14px;
+}
+.header-top-bar ul li a.notice img{
+	float: left;
+}
+.header-top-bar ul li a.notice span{
+	float: left;
+	margin-left: 5px;
+}
+.header-top-bar ul li a strong{
+	color: #d23a31;
+}
+.header-main{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header-main .logo{
+	float: left;
+	margin-top: 30px;
+}
+.header-main-right{
+	float: right;
+}
+.header-notice{
+	width: 237px;
+	height: 60px;
+	background: url("../images/ico-banner.jpg") no-repeat;
+	float: left;
+	margin-top: 26px;
+	cursor: pointer;
+}
+.header-cart{
+	float: left;
+	display: block;
+	width: 87px;
+	height: 28px;
+	line-height: 28px;
+	border: 2px solid #e6394d;
+	margin-top: 42px;
+	margin-left: 37px;
+	padding-left: 34px;
+	background: url("../images/ico-header-cart.jpg") no-repeat;
+	color: #666;
+	font-size: 12px;
+	border-radius: 1px;
+}
+.header-cart b{
+	color: #e6394d;
+}
+.header-cart em{
+	width: 6px;
+	height: 8px;
+	display: inline-block;
+	background: url("../images/ico-header-arrow.png") no-repeat;
+	margin-left: 9px;
+}
+.header-mobile{
+	float: left;
+	width: 72px;
+	color: #9f9f9f;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 8px;
+	margin-left: 28px;
+}
+.header-mobile img{
+	width: 66px;
+	display: block;
+	margin: 5px auto ;
+}
+.header-mobile p strong{
+	color: #ff0006;
+}
+.main-nav-wrap {
+	height: 40px;
+	clear: both;
+	background: #e6394d;
+	min-width: 1200px;
+}
+.main-nav-wrap-fixed{
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1001;
+}
+.main-nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+.main-nav-mobile{
+	float: right;
+	color: #ffffff;
+	font-size: 14px;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 48px;
+	background: url("../images/bg-nav-mobile.jpg") no-repeat;
+	margin-top: 5px;
+	text-decoration: none;
+}
+.main-nav-mobile:hover{
+	color: #ffffff!important;
+}
+.main-nav ul{
+	float: left;
+	margin: 0px;
+}
+.main-nav ul li{
+	float: left;
+	width: 135px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.main-nav ul li:hover{
+	background: #e13a4e;
+}
+.main-nav ul li a{
+	display: block;
+	width:135px;
+	height:40px;
+	color: #ffe8eb;
+	font-size: 18px;
+	position: relative;
+}
+.main-nav ul li a em.ico-new{
+	position: absolute;
+	display: block;
+	width: 29px;
+	height: 15px;
+	right: 14px;
+	top: 2px;
+	background: url("../images/ico-new.png") no-repeat;
+}
+.main-nav ul li.cur{
+	background: #a40000;
+}
+.main-nav ul li.cur a{
+	color: #ffffff;
+}
+.main-nav ul li a:hover{
+	color: #ffe8eb!important;
+	text-decoration: none;
+}
+.header-search-wrap{
+	float: left;
+	margin-top: 31px;
+	margin-right: 56px;
+	position: relative;
+}
+.header-search-box{
+	overflow: hidden;
+}
+.header-search-txt{
+	float: left;
+	width: 330px;
+	height: 33px;
+	line-height: 33px;
+	border: 2px solid #e6394d;
+	padding:0 0 0 8px;
+	color: #cacaca;
+}
+.header-search-btn{
+	float: left;
+	border: none;
+	width: 95px;
+	height: 37px;
+	background:#e6394d;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: "Microsoft YaHei", "微软雅黑";
+	cursor: pointer;
+}
+.header-search-note{
+	margin-top: 4px;
+}
+.header-search-note a{
+	color: #c0c0c0;
+	font-size: 12px;
+}
+.header-search-note a span{
+	color: #707070;
+	margin-right: 3px;
+}
+#header-s1{
+	width: 313px;
+}
+.main-nav-cart{
+	float: right;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 52px;
+	background: url("../images/ico-cart.png") no-repeat 19px 11px #000000;
+	font-size: 12px;
+	color: #ffffff;
+	cursor: pointer;
+	margin-left: 30px;
+}
+.main-nav-cart:hover{
+	color: #ffffff!important;
+}
+.main-nav-cart:hover b{
+	color: #e6394d!important;
+}
+.main-nav-cart b{
+	color: #e6394d;
+	font-size: 14px;
+	font-weight: bold;
+}

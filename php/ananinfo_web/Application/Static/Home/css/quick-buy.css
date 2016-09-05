@@ -1,0 +1,181 @@
+.bg-quick-buy{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+.quick-buy-wrap{
+	position: relative;
+	z-index: 11;
+}
+.quick-buy-nav{
+	height: 54px;
+	background: rgba(0,0,0,0.3);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000,endColorstr=#19000000);
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.quick-buy-nav ul{
+	float: right;
+	margin-right: 36px;
+	margin-top: 16px;
+	position: relative;
+	z-index: 11;
+}
+.quick-buy-nav ul li{
+	float: left;
+	margin-left: 19px;
+}
+.quick-buy-nav ul li a{
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.quick-buy-nav ul li p{
+	color: #999;
+}
+.quick-buy-con{
+	width: 640px;
+	margin: 158px auto 0px;
+}
+.quick-buy-logo{
+	text-align: center;
+}
+.quick-search-wrap{
+	margin-top: 35px;
+	position: relative;
+	display: block;
+	height: 40px;
+}
+.quick-search-note{
+    font-size: 12px;
+    color: #ffffff;
+    text-align: left;
+    height: 50px;
+    padding-top: 10px;
+}
+.quick-search-txt{
+	width: 529px;
+	height: 38px;
+	line-height: 38px;
+	background: #ffffff;
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	border-right:none ;
+	padding-left: 10px;
+	font-family: "Microsoft YaHei", "微软雅黑";
+	float: left;
+}
+.quick-search-btn{
+	border: none;
+	background: url("../images/btn-quick-search.jpg") no-repeat center center #e3393c;
+	width: 100px;
+	height: 40px;
+	float: left;
+	cursor: pointer;
+}
+#search-s1{
+	width: 512px
+}
+.quick-store-wrap{
+}
+.quick-store-list{
+	margin-right: -60px;
+}
+.quick-store-list li{
+	width: 109px;
+	height: 109px;
+	border-radius: 50%;
+	position: relative;
+	background: #ffffff;
+	text-align: center;
+	line-height: 109px;
+	border: 3px solid #d2d2d2;
+	cursor: pointer;
+	float: left;
+	margin-right: 60px;
+	margin-bottom: 20px;
+}
+.quick-store-list li:hover{
+	border: 3px solid #e3393c;
+	box-shadow: 0px 0px 9px #999;
+}
+.quick-store-list li img{
+	vertical-align: middle;
+}
+.quick-store-list li a{
+	color: #999999;
+	font-size: 12px;
+}
+.quick-store-more a{
+	float: right;
+	color: #ffffff;
+}
+.help-bg{
+	background: #000000;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	position: fixed;
+}
+.search-step-1{
+	position: absolute;
+	width: 687px;
+	height: 320px;
+	z-index: 1000;
+	background: url("../images/bg-search-step.png") no-repeat 0px 0px;
+	top: 351px;
+	left: 50%;
+	margin-left: -343px;
+}
+.search-step-2{
+	position: absolute;
+	width: 716px;
+	height: 141px;
+	z-index: 1000;
+	background: url("../images/bg-search-step.png") no-repeat 0px -320px;
+	top: 310px;
+	left: 50%;
+	margin-left: -358px;
+}
+.search-step-3{
+	position: absolute;
+	width: 706px;
+	height: 395px;
+	z-index: 1000;
+	background: url("../images/bg-search-step.png") no-repeat 0px -461px;
+	top: 310px;
+	left: 50%;
+	margin-left: -358px;
+}
+.btn-step-next{
+	position: absolute;
+	width: 126px;
+	height: 56px;
+	background: url("../images/btn-step-next.png") no-repeat;
+	right: 0px;
+	bottom: -80px;
+}
+.btn-step-go{
+	position: absolute;
+	width: 126px;
+	height: 56px;
+	background: url("../images/btn-search-go.png") no-repeat;
+	right: 0px;
+	top: 301px;
+}
+.btn-review{
+	position: absolute;
+	width: 67px;
+	height: 21px;
+	background: url("../images/btn-search-look-again.png") no-repeat;
+	right: 31px;
+	top: 367px;
+}

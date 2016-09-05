@@ -1,0 +1,253 @@
+[ 2016-05-23T10:05:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002682s ]
+
+[ 2016-05-23T10:05:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-05-23T10:06:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+
+[ 2016-05-23T10:06:55+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+
+[ 2016-05-23T10:06:55+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+
+[ 2016-05-23T10:09:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+
+[ 2016-05-23T10:09:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+
+[ 2016-05-23T10:10:16+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+NOTIC: [2] include_once(E:\code\aainfo\php\aainfo_web\Application\Common\Vendor\Thrift\ClassLoader\ThriftClassLoader.php): failed to open stream: No such file or directory E:\code\aainfo\php\aainfo_web\Application\Home\Service\BaseService.class.php ç¬¬ 14 è¡Œ.
+NOTIC: [2] include_once(): Failed opening './Application//Common/Vendor/Thrift/ClassLoader/ThriftClassLoader.php' for inclusion (include_path='.;C:\php\pear') E:\code\aainfo\php\aainfo_web\Application\Home\Service\BaseService.class.php ç¬¬ 14 è¡Œ.
+
+[ 2016-05-23T10:10:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+
+[ 2016-05-23T10:11:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001449s ]
+
+[ 2016-05-23T10:15:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+
+[ 2016-05-23T10:15:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+
+[ 2016-05-23T10:15:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+
+[ 2016-05-23T10:15:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+
+[ 2016-05-23T10:15:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001741s ]
+
+[ 2016-05-23T10:15:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+
+[ 2016-05-23T10:15:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+
+[ 2016-05-23T10:15:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+NOTIC: [2] fsockopen():  E:\code\aainfo\php\aainfo_web\Application\Common\Thrift\Transport\TSocket.php ç¬¬ 226 è¡Œ.
+ERR: TSocket: Could not connect to 127.0.0.1:11000 (ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ [10060])
+
+[ 2016-05-23T10:15:49+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+NOTIC: [2] fsockopen():  E:\code\aainfo\php\aainfo_web\Application\Common\Thrift\Transport\TSocket.php ç¬¬ 226 è¡Œ.
+ERR: TSocket: Could not connect to 127.0.0.1:11000 (ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ [10060])
+
+[ 2016-05-23T10:30:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+NOTIC: [8] Undefined variable: uid E:\code\aainfo\php\aainfo_web\Application\Home\Controller\IndexController.class.php ç¬¬ 8 è¡Œ.
+
+[ 2016-05-23T10:32:13+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+NOTIC: [8] Undefined variable: uid E:\code\aainfo\php\aainfo_web\Application\Home\Controller\IndexController.class.php ç¬¬ 8 è¡Œ.
+NOTIC: [8] Trying to get property of non-object E:\code\aainfo\php\aainfo_web\Application\Home\Controller\IndexController.class.php ç¬¬ 10 è¡Œ.
+NOTIC: [8] Trying to get property of non-object E:\code\aainfo\php\aainfo_web\Application\Home\Controller\IndexController.class.php ç¬¬ 14 è¡Œ.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/login_dialog.html): failed to open stream: No such file or directory E:\code\aainfo\php\aainfo_web\ThinkPHP\Library\Think\Template.class.php ç¬¬ 696 è¡Œ.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001826s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002053s ]
+NOTIC: [8] Undefined index: HTTP_REFERER E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 27 è¡Œ.
+NOTIC: [8] Undefined variable: uid E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 31 è¡Œ.
+NOTIC: [8] Undefined variable: controllername E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 120 è¡Œ.
+NOTIC: [8] Undefined variable: _G E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 147 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001898s ]
+
+[ 2016-05-23T10:32:13+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+NOTIC: [8] Undefined variable: uid E:\code\aainfo\php\aainfo_web\Application\Home\Controller\IndexController.class.php ç¬¬ 8 è¡Œ.
+NOTIC: [8] Trying to get property of non-object E:\code\aainfo\php\aainfo_web\Application\Home\Controller\IndexController.class.php ç¬¬ 10 è¡Œ.
+NOTIC: [8] Trying to get property of non-object E:\code\aainfo\php\aainfo_web\Application\Home\Controller\IndexController.class.php ç¬¬ 14 è¡Œ.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/login_dialog.html): failed to open stream: No such file or directory E:\code\aainfo\php\aainfo_web\ThinkPHP\Library\Think\Template.class.php ç¬¬ 696 è¡Œ.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined index: HTTP_REFERER E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 27 è¡Œ.
+NOTIC: [8] Undefined variable: uid E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 31 è¡Œ.
+NOTIC: [8] Undefined variable: controllername E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 120 è¡Œ.
+NOTIC: [8] Undefined variable: _G E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 147 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-05-23T10:32:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [8] Undefined variable: uid E:\code\aainfo\php\aainfo_web\Application\Home\Controller\IndexController.class.php ç¬¬ 8 è¡Œ.
+NOTIC: [8] Trying to get property of non-object E:\code\aainfo\php\aainfo_web\Application\Home\Controller\IndexController.class.php ç¬¬ 10 è¡Œ.
+NOTIC: [8] Trying to get property of non-object E:\code\aainfo\php\aainfo_web\Application\Home\Controller\IndexController.class.php ç¬¬ 14 è¡Œ.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/login_dialog.html): failed to open stream: No such file or directory E:\code\aainfo\php\aainfo_web\ThinkPHP\Library\Think\Template.class.php ç¬¬ 696 è¡Œ.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8] Undefined index: HTTP_REFERER E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 27 è¡Œ.
+NOTIC: [8] Undefined variable: uid E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 31 è¡Œ.
+NOTIC: [8] Undefined variable: controllername E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 120 è¡Œ.
+NOTIC: [8] Undefined variable: _G E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php ç¬¬ 147 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+

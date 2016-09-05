@@ -1,0 +1,123 @@
+.m-dialog{
+	position: fixed;
+	z-index:100000;
+	display: none;
+	left: 50%;
+	margin-left: -156px;
+	top: 45%;
+}
+.m-dialog .container {
+	background-color:rgba(0, 0, 0, 0.2);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000,endColorstr=#30000000);
+	padding: 6px;
+	width: 300px;
+}
+.m-dialog .title {
+	background: none repeat scroll 0 0 #eee;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.m-dialog .title h3 {
+	font-size: 14px;
+	padding: 5px 0 5px 10px;
+	font-weight: bold;
+	float: left;
+	margin: 0px;
+}
+.m-dialog .btn {
+	color: #999;
+	cursor: pointer;
+	display: block;
+	font-family: simsun;
+	font-size: 16px;
+	font-weight: 700;
+	position: absolute;
+	right: 12px;
+	text-decoration: none;
+	top: 8px;
+}
+.m-dialog .m-content {
+	background: none repeat scroll 0 0 #fff;
+}
+.pop-car-win {
+	padding: 25px;
+}
+.pop-car-win .pop-content {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 15px;
+}
+
+.pop-car-win .pop-content .pop-success h4 {
+	margin: 0 0 10px 10px;
+}
+.pop-car-win .pop-content .pop-success h4 {
+	margin: 0 0 10px 10px;
+}
+.pop-car-win .pop-content h4 {
+	font-size: 16px;
+	line-height: 32px;
+	width: 240px;
+	margin: 0px auto 10px;
+	font-weight: bold;
+	overflow: hidden;
+}
+.pop-car-win .pop-content b {
+	background: url("../images/tipsBg.png") no-repeat scroll -120px 0px;
+	display: inline-block;
+	height: 33px;
+	margin-right: 10px;
+	vertical-align: -10px;
+	width: 33px;
+	float: left;
+	margin-top: 5px;
+}
+.pop-car-win .pop-content b.warn{
+	background: url("../images/tipsBg.png") no-repeat scroll -120px -140px;
+}
+.pop-car-win .pop-content b.ok{
+	background: url("../images/tipsBg.png") no-repeat scroll -120px 0px;
+}
+.pop-car-win .pop-content b.error{
+	background: url("../images/tipsBg.png") no-repeat scroll -120px -70px;
+}
+.pop-car-win .pop-content b.ask{
+	background: url("../images/tipsBg.png") no-repeat scroll -120px -210px;
+}
+.pop-car-win .pop-content span{
+	display: inline-block;
+	width:197px;
+	float: left;
+}
+.btn-close{
+	background: url("../images/ico-win.png") no-repeat scroll 0 0;
+	cursor: pointer;
+	display: block;
+	float: right;
+	height: 14px;
+	margin-right: 15px;
+	margin-top: 8px;
+	width: 15px
+}
+.car-btn {
+	padding: 6px 10px;
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.imp-btn{
+	border-color: #d23a31;
+	background: #d23a31;
+	color: #ffffff;
+}
+a.imp-btn:hover{
+	color: #ffffff!important;
+}
+.btn-box{
+	padding: 5px;
+	margin: 0 auto;
+	text-align: center;
+}

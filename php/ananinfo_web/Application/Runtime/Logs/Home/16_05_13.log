@@ -1,0 +1,24 @@
+[ 2016-05-13T09:32:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000297s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/login_dialog.html): failed to open stream: No such file or directory E:\code\aainfo\php\aainfo_web\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001868s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003602s ]
+NOTIC: [8] Undefined variable: uid E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined variable: controllername E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 120 行.
+NOTIC: [8] Undefined variable: _G E:\code\aainfo\php\aainfo_web\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002594s ]
+

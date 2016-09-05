@@ -1,0 +1,28 @@
+<notempty name="leftPid">
+ <div class="span3" id="sidebar">
+    <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
+        <volist name="rules" id="v">
+			<if condition="$v.id eq $leftPid">
+				<volist name="v.children" id="vv">
+					<if condition="$vv.id eq $menuid">
+						<li class="active">
+		                	<a href={:getNavUrl($vv)}><i class="icon-chevron-right"></i>{$vv.title}</a>
+		            	</li>
+		            <else/>
+						<li>
+		                	<a href={:getNavUrl($vv)}><i class="icon-chevron-right"></i>{$vv.title}</a>
+		            	</li>
+		            </if>
+            	</volist>
+			</if>
+        </volist>
+
+        <li>
+            <a href="calendar.html"><i class="icon-chevron-right"></i> test2</a>
+        </li>
+        <li>
+            <a href="#"><span class="badge badge-success pull-right">731</span> Orders</a>
+        </li>
+    </ul>
+</div>
+</notempty>

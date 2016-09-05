@@ -1,0 +1,253 @@
+/*分页样式*/
+.paging-box{
+	overflow: hidden;
+	display: inline-block;
+}
+.paging-box .paging-num{
+	padding: 3px 8px;
+	border: 1px solid #cccccc;
+	text-align: center;
+	color: #5d5d5d;
+	background: #ffffff;
+	float: left;
+	font-size: 12px;
+	margin-left: 5px;
+	text-decoration: none;
+}
+.paging-box a.paging-num:first-child{
+	margin-left: 0px;
+}
+.paging-box a.cur{
+	background: #e6394d;
+	border-color: #e6394d;
+	color: #ffffff;
+}
+.paging-box a.cur:hover{
+    color: #ffffff!important;
+}
+.paging-box em{
+	float: left;
+	margin-left: 5px;
+}
+.paging-box .paging-input{
+	float: left;
+	margin-left: 10px;
+}
+.paging-box .paging-input span:first-child{
+	margin-left: 0px;
+}
+.paging-box .paging-input span{
+	font-size: 12px;
+	color: #5d5d5d;
+	float: left;
+	margin-top: 4px;
+	margin-left: 5px;
+	margin-right: 9px;
+}
+.paging-box .paging-input input{
+	width: 60px;
+	height: 23px;
+	line-height: 23px;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	text-align: center;
+	float: left;
+}
+.paging-input .paging-btn{
+	float: left;
+	width: 62px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: #ffffff;
+	text-decoration: none;
+	background: #e6394d;
+}
+.paging-input .paging-btn:hover{
+	color: #ffffff !important;ma
+}
+.paging-box .paging-next ,.paging-box .paging-prev {
+	float: left;
+	width: 56px;
+	height: 23px;
+	line-height: 23px;
+	border: 1px solid #cccccc;
+	position: relative;
+	background: #ffffff;
+	color: #5d5d5d;
+	text-decoration: none;
+}
+.paging-box .paging-next{
+	text-align: left;
+	margin-left: 10px;
+	padding-left: 4px;
+}
+.paging-box .paging-prev{
+	text-align: right;
+	margin-right: 5px;
+	padding-right: 4px;
+}
+.paging-box .paging-prev{
+	float: left;
+}
+.paging-arrow-right{
+	height:0;
+	width:0;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+	border-color:transparent transparent  transparent #cccccc;
+	border-style:dashed dashed dashed solid;
+	border-width:4px;
+	position: absolute;
+	right: 9px;
+	top: 8px;
+}
+.paging-arrow-left{
+	height:0;
+	width:0;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+	border-color:transparent #cccccc  transparent transparent;
+	border-style:dashed solid dashed dashed;
+	border-width:4px;
+	position: absolute;
+	left: 2px;
+	top: 8px;
+}
+/*属性选择框*/
+.sku-sel-box{
+	height: 23px;
+	width: 200px;
+	border: 1px solid #a7a6ac;
+	position: relative;
+	cursor: pointer;
+}
+.sku-sel-box span{
+	float: left;
+	height: 23px;
+	line-height: 23px;
+	padding-left: 8px;
+	font-size: 12px;
+	color: #333;
+	width: 168px;
+	overflow: hidden;
+}
+.sku-sel-box em{
+	float: right;
+	width: 23px;
+	height: 23px;
+	border-left: 1px solid #a7a6ac;
+	background: url("../images/bg-sku-sel-box.png") no-repeat center center;
+}
+.sku-sel-combo{
+	position: absolute;
+	left: -1px;
+	top: 23px;
+	width: 200px;
+	max-height: 138px;
+	overflow: auto;
+	border: 1px solid #a7a6ac;
+	background: #ffffff;
+	display: none;
+	z-index: 22;
+}
+.sku-sel-combo ul{
+	list-style: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+.sku-sel-combo ul li{
+	height: 23px;
+	line-height: 23px;
+	padding-left: 8px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.sku-sel-combo ul li.disabled{
+	color: #999;
+	cursor: not-allowed;
+}
+
+.sku-sel-combo ul li.recommend{
+	color: #999;
+}
+
+.size-list a.disabled{
+	cursor:not-allowed;
+	border: 1px dashed #999;
+	opacity: 0.6;
+}
+
+.size-list a.recommend{
+	border: 1px dashed #999;
+	opacity: 0.6;
+}
+
+.sku-sel-combo ul li:hover{
+	background: #cccccc;
+}
+/*数字输入框*/
+.sku-num-box{
+	overflow: hidden;
+}
+.sku-num-box input{
+	width: 33px;
+	height: 29px;
+	line-height: 29px;
+	border: 1px solid #a7a6ac;
+	font-size: 12px;
+	color: #333!important;
+	padding-left: 8px;
+	font-family: "Microsoft YaHei", "微软雅黑";
+	float: left;
+}
+.sku-num-control{
+	float: left;
+	margin-left: 4px;
+	width: 18px;
+}
+.sku-num-control a.sku-num-plus{
+	display: block;
+	width: 16px;
+	height: 12px;
+	background: url("../images/bg-num-controll-1.jpg") no-repeat center center #ffffff;
+	border: 1px solid #a7a6ac;
+	margin-bottom: 3px;
+}
+.sku-num-control a.sku-num-reduce{
+	display: block;
+	width: 16px;
+	height: 12px;
+	background: url("../images/bg-num-controll-2.jpg") no-repeat center center #ffffff;
+	border: 1px solid #a7a6ac;
+}
+.sku-num-disabled{
+	border: 1px dashed #c9c9c9!important;
+	color: #999999!important;
+	cursor: not-allowed!important;
+}
+.sku-warn{
+	color: #d12e25;
+	font-size: 12px;
+	margin-top: 6px;
+	margin-left: 6px;
+	max-width: 200px;
+}
+.win-bg{
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	position: fixed;
+	left:0px;
+	top:0px;
+	z-index: 9999;
+}
+/*按钮禁用*/
+.btn-disabled{
+	background: #ffacb0!important;
+	cursor: default!important;
+}
