@@ -33,10 +33,10 @@
 
                                         <form id="ananinfo-contact-form" name="contact-form" method="post" action="/?c=Users&a=login">
                                             <div class="form-group">
-                                                <input type="text" name="name" class="form-control" required="required" placeholder="账号">
+                                                <input type="text" name="name"  id="name"  class="form-control" required="required" placeholder="账号">
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" name="password" class="form-control" required="required" placeholder="密码">
+                                                <input type="password" name="password"  id="password"  class="form-control" required="required" placeholder="密码">
                                             </div>
  
                                             <div class="input-group">
@@ -69,19 +69,23 @@
 
         $('#ananinfo-contact-form').submit(function(event){
             event.preventDefault();
+            var name = $('#name').val();
+            var password = $('#password').val();
             var verify_code = $('#verify').val();
             $.ajax({
                 url: $(this).attr('action'),
                 data : {
-                        'verify_code' : verify_code
+                        'verify_code' : verify_code,
+                        'name':name,
+                        'password':password
                     },
                 type : "post",
                 dataType : "json",
                     success : function(data) {
-                        // alert(data.status);
-                        // alert(data.content);
+                        if(!data.status){
+                            alert(data.content);
+                        } 
                         $('#verify_code').attr('src','/?c=Users&a=verify');
-                        alert("验证码错误");
                     }
             });
         });

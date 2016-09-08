@@ -11,7 +11,7 @@ class UsersModel extends BaseModel {
      public function getByUser($user=0){
 	 	$m = M('users');
 	 	$condition= array();
-	 	$condition['user_login'] = I('user_login');
+	 	$condition['user_login'] = $user;
 		return $m->where($condition)->find();
 	 }
 	 /**
@@ -31,55 +31,11 @@ class UsersModel extends BaseModel {
 	 	$m = M('users');
 		return $m->add($data);
 	 }
-	 /*
-	 *获取验证码
-	 */
-	 public function verfy(){
-		
-		$Verify = new \Think\Verify();
-		$Verify->entry();
-	}
-
-
-
-
-
-     /**
-	  * 获取用户信息
-	  */
-     public function get($userId=0){
-	 	$m = M('users');
-	 	$userId = $userId?$userId:I('id',0);
-		$user = $m->where("userId=".$userId)->find();
-		if(!empty($user) && $user['userType']==1){
-			//加载商家信息
-		 	$s = M('shops');
-		 	$shops = $s->where('userId='.$user['userId']." and shopFlag=1")->find();
-		 	if(!empty($shops))$user = array_merge($shops,$user);
-		}
-		return $user;
-	 }
 	 
-	/**
-	  * 获取用户信息
-	  */
-     public function getUserInfo($loginName,$loginPwd){
-	 	$m = M('users');
-		$loginPwd = md5($loginPwd);
-	 	$rs = $m->where(" loginName ='%s' AND loginPwd ='%s' ",array($loginName,$loginPwd))->find();
-	    return $rs;
-	 }
-	 
-	/**
-	  * 获取用户信息
-	  */
-     public function getUserById($obj){
-	 	$m = M('users');
-		$userId = $obj["userId"];
-	 	$rs = $m->where(" userId ='%s' ",array($userId))->find();
-	 	
-	    return $rs;
-	 }
+
+
+
+
 	 
  	/**
 	  * 查询登录名是否存在

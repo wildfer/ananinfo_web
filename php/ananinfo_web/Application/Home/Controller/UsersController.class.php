@@ -9,7 +9,7 @@ class UsersController extends BaseController {
 	/*注册*/
 	function register(){
 		$user = D('Users');
-		if ($user->getByUser()){
+		if ($user->getByUser(I('name'))){
 			$this->error("用户已经存在");	
 		}
 		if ($user->getByPhone()){
@@ -45,17 +45,42 @@ class UsersController extends BaseController {
 	}
 	/*登陆*/
 	function login(){
+		//验证码
 		$verify_code = trim(I('verify_code'));
 		if (!$this->check_verify($verify_code)){
 			$data['status']  = false;
-			$data['content'] = '错误的验证码'.$verify_code;
+			$data['content'] = '错误的验证码。';
+			$this->ajaxreturn($data);
+			exit;
+		}
+		
+		$name=I('name');
+		$password=I('password');
+		$user = D('Users');
+		$user->getByUser($name);
+		//验证用户名密码
+		$memory = 3600*24*7; // 保持记录一个礼拜
+		if($user && $user['user_pass'] == md5($password . '^' . $user['user_activation_key'])) {
+			cookie('auth', authcode($user['uid'] . "\t" . $user['user_pass'] . "\t" . get_client_ip(). "\t" . 'web', 'ENCODE'), $memory);
+			$data['status']  = false;
+			$data['content'] = '11111';
 			$this->ajaxreturn($data);
 			exit;
 		}else{
-			$data['status']  = true;
-			$data['content'] = 'zzzz'.$verify_code;
+			$data['status']  = false;
+			$data['content'] = '无效的用户名或密码。';
 			$this->ajaxreturn($data);
+			exit;
 		}
+		$data['status']  = false;
+			$data['content'] = '22222。';
+			$this->ajaxreturn($data);
+			exit;
+
+		$data['status']  = false;
+			$data['content'] = '成功';
+			$this->ajaxreturn($data);
+
 		$this->display("index");
 	}
 
