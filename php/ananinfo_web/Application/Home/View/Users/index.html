@@ -1,0 +1,89 @@
+<include file="Public/header" />
+   <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Shortcodes</h1>
+                            <p>A Cool Collection of Bootstrap Shortcodes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section id="shortcodes">
+        <div class="container">
+            <div id="tab-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">Tab</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <ul id="tab1" class="nav nav-tabs">
+                            <li class="active"><a href="#tab1-item1" data-toggle="tab">登陆</a></li>
+                            <li><a href="#tab1-item2" data-toggle="tab">注册</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active in" id="tab1-item1">
+                                <div class="col-md-4 col-sm-12">
+
+                                    <div class="contact-form bottom">
+
+                                        <form id="ananinfo-contact-form" name="contact-form" method="post" action="/?c=Users&a=login">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" required="required" placeholder="账号">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" name="password" class="form-control" required="required" placeholder="密码">
+                                            </div>
+ 
+                                            <div class="input-group">
+                                                <input type="text" name="verify" id="verify" class="form-control" required="required" placeholder="验证码">
+                                                <div class="input-group-btn"><img src="/?c=Users&a=verify"  id="verify_code" height="34"> </div> 
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="submit" name="submit" class="btn btn-submit" value="Submit">
+                                            </div>
+                                            
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab1-item2">
+                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--/#table-container-->
+        </div>
+    </section> 
+    <script>
+        $('#verify_code').click(function(){
+                $('#verify_code').attr('src','/?c=Users&a=verify');
+        });
+
+        $('#ananinfo-contact-form').submit(function(event){
+            event.preventDefault();
+            var verify_code = $('#verify').val();
+            $.ajax({
+                url: $(this).attr('action'),
+                data : {
+                        'verify_code' : verify_code
+                    },
+                type : "post",
+                dataType : "json",
+                    success : function(data) {
+                        // alert(data.status);
+                        // alert(data.content);
+                        $('#verify_code').attr('src','/?c=Users&a=verify');
+                        alert("验证码错误");
+                    }
+            });
+        });
+</script>
+<include file="Public/footer" />

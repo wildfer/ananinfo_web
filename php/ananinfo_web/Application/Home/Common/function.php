@@ -56,8 +56,7 @@ function authcode($string, $operation = 'DECODE', $key = '', $expiry = 0) {
 
 }
 /*获得配置的URL*/
-function getNavUrl( $rules )
-{
+function getNavUrl( $rules ){
 	$link = '' ;
 	$link .= '?c=' . $rules['module'];
 	$link .= $rules['action'] ? '&a=' . $rules['action'] : '';
@@ -71,8 +70,7 @@ function getNavUrl( $rules )
 }
 
 /*截取字符串*/
-function msubstr($str, $start=0, $length, $charset="utf-8", $suffix=true)
-{
+function msubstr($str, $start=0, $length, $charset="utf-8", $suffix=true){
 	if(strlen($str)/3>$length){
 		if(function_exists("mb_substr")){
 			return mb_substr($str, $start, $length, $charset).'…';

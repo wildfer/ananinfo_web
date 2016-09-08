@@ -1,15 +1,49 @@
 <?php
 namespace Home\Model;
 /**
- * ============================================================================
- * WSTMall开源商城
- * 官网地址:http://www.wstmall.com 
- * 联系QQ:707563272
- * ============================================================================
  * 会员服务类
  */
 class UsersModel extends BaseModel {
 	
+	/**
+	  * 获取用户
+	  */
+     public function getByUser($user=0){
+	 	$m = M('users');
+	 	$condition= array();
+	 	$condition['user_login'] = I('user_login');
+		return $m->where($condition)->find();
+	 }
+	 /**
+	  * 获取用户
+	  */
+     public function getByPhone(){
+	 	$m = M('users');
+	 	$condition= array();
+	 	$condition['user_phone'] = I('user_phone');
+		return $m->where($condition)->find();
+	 }
+
+	 /**
+	  * 新增
+	  */
+	 public function add($data){
+	 	$m = M('users');
+		return $m->add($data);
+	 }
+	 /*
+	 *获取验证码
+	 */
+	 public function verfy(){
+		
+		$Verify = new \Think\Verify();
+		$Verify->entry();
+	}
+
+
+
+
+
      /**
 	  * 获取用户信息
 	  */
@@ -121,97 +155,6 @@ class UsersModel extends BaseModel {
 	
 	 
 	/**
-	 * 会员注册
-	 */
-    public function regist(){
-    	$m = M('users');
-    	$rd = array('status'=>-1);	   
-    	
-    	$data = array();
-    	$data['loginName'] = I('loginName','');
-    	$data['loginPwd'] = I("loginPwd");
-    	$data['reUserPwd'] = I("reUserPwd");
-    	$data['protocol'] = I("protocol");
-    	$loginName = $data['loginName'];
-    	if($data['loginPwd']!=$data['reUserPwd']){
-    		$rd['status'] = -3;
-    		return $rd;
-    	}
-    	if($data['protocol']!=1){
-    		$rd['status'] = -6;
-    		return $rd;
-    	}
-    	foreach ($data as $v){
-    		if($v ==''){
-    			$rd['status'] = -7;
-    			return $rd;
-    		}
-    	}
-        //检测账号是否存在
-        $crs = $this->checkLoginKey($loginName);
-        if($crs['status']!=1){
-	    	$rd['status'] = -2;
-	    	return $rd;
-	    }
-	    $nameType = I("nameType");
-	    $mobileCode = I("mobileCode");
-		if($nameType==3){//手机号码
-			$verify = session('VerifyCode_userPhone');
-			$startTime = (int)session('VerifyCode_userPhone_Time');
-			if((time()-$startTime)>120){
-				$rd['status'] = -5;
-				return $rd;
-			}
-			if($mobileCode=="" || $verify != $mobileCode){
-				$rd['status'] = -4;
-				return $rd;
-			}
-			$loginName = $this->randomLoginName($loginName);
-		}else if($nameType==1){//邮箱注册
-			$unames = explode("@",$loginName);
-			$loginName = $this->randomLoginName($unames[0]);
-		}
-		if($loginName=='')return $rd;//分派不了登录名
-		$data['loginName'] = $loginName;
-	    unset($data['reUserPwd']);
-	    unset($data['protocol']);
-	    //检测账号，邮箱，手机是否存在
-	    $data["loginSecret"] = rand(1000,9999);
-	    $data['loginPwd'] = md5(I('loginPwd').$data['loginSecret']);
-	    $data['userType'] = 0;
-	    $data['userName'] = I('userName');
-	    $data['userQQ'] = I('userQQ');
-	    $data['userPhone'] = I('userPhone');
-	    $data['userScore'] = I('userScore');
-		$data['userEmail'] = I("userEmail");
-	    $data['createTime'] = date('Y-m-d H:i:s');
-	    $data['userFlag'] = 1;
-	    
-	   
-		$rs = $m->add($data);
-		if(false !== $rs){
-			$rd['status']= 1;
-			$rd['userId']= $rs;
-		}
-	   
-	    if($rd['status']>0){
-	    	$data = array();
-	    	$data['lastTime'] = date('Y-m-d H:i:s');
-	    	$data['lastIP'] = get_client_ip();
-	    	$m->where(" userId=".$rs['userId'])->data($data)->save();	 		
-	    	//记录登录日志
-		 	$data = array();
-			$data["userId"] = $rd['userId'];
-			$data["loginTime"] = date('Y-m-d H:i:s');
-			$data["loginIp"] = get_client_ip();
-			$m = M('log_user_logins');
-			$m->add($data);
-	    	
-	    } 
-		return $rd;
-	}
-	
-	/**
 	 * 随机生成一个账号
 	 */
 	public function randomLoginName($loginName){
@@ -227,25 +170,6 @@ class UsersModel extends BaseModel {
 			if($crs['status']==1)return $loginName."_".$i;
 		}
 		return '';
-	}
-	
-	/**
-	 * 查询用户手机是否存在
-	 */
-    public function checkUserPhone($userPhone){
-    	$userId = I("userId");
-    	
-    	$rd = array('status'=>-3);
-	 	
-	 	$m = M('users');
-		$sql =" userFlag=1 and userPhone='".$userPhone."'";
-		if($userId>0){
-			$sql .= " AND userId <> $userId";
-		}
-		$rs = $m->where($sql)->count();
-	
-	    if($rs==0)$rd['status'] = 1;
-	    return $rd;
 	}
 	
 	/**

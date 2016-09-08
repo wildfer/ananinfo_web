@@ -3,8 +3,6 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends BaseController {
     public function index(){
-    	echo 'hello,world!!!!!';
-
 		$assign = array(
 			'seo' => array(
 				'title' => '安安的购物经验录',
