@@ -84,8 +84,10 @@
                     success : function(data) {
                         if(!data.status){
                             alert(data.content);
-                        } 
-                        $('#verify_code').attr('src','/?c=Users&a=verify');
+                            $('#verify_code').attr('src','/?c=Users&a=verify');
+                        }else {
+                            window.location.href = '/';
+                        }
                     }
             });
         });

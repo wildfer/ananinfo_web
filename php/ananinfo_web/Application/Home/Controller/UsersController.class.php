@@ -45,6 +45,14 @@ class UsersController extends BaseController {
 	}
 	/*登陆*/
 	function login(){
+		$data['status']  = true;
+		$this->uid = cookie('uid');
+		if ($this->uid) {
+			$data['status']  = true;
+			$this->ajaxreturn($data);
+			exit;
+		}
+
 		//验证码
 		$verify_code = trim(I('verify_code'));
 		if (!$this->check_verify($verify_code)){
@@ -57,33 +65,27 @@ class UsersController extends BaseController {
 		$name=I('name');
 		$password=I('password');
 		$user = D('Users');
-		$user->getByUser($name);
+		$userdata = $user->getByUser($name);
+
 		//验证用户名密码
 		$memory = 3600*24*7; // 保持记录一个礼拜
-		if($user && $user['user_pass'] == md5($password . '^' . $user['user_activation_key'])) {
-			cookie('auth', authcode($user['uid'] . "\t" . $user['user_pass'] . "\t" . get_client_ip(). "\t" . 'web', 'ENCODE'), $memory);
-			$data['status']  = false;
-			$data['content'] = '11111';
-			$this->ajaxreturn($data);
-			exit;
+		if($userdata && $userdata['user_pass'] == md5($password . '^' . $userdata['user_activation_key'])) {
+			cookie('uid',$userdata['id'], $memory);
+			cookie('auth', authcode($userdata['id'] . "\t" . $userdata['user_pass'] . "\t" . get_client_ip(). "\t" . 'web', 'ENCODE'), $memory);
+			
 		}else{
 			$data['status']  = false;
 			$data['content'] = '无效的用户名或密码。';
 			$this->ajaxreturn($data);
 			exit;
 		}
-		$data['status']  = false;
-			$data['content'] = '22222。';
-			$this->ajaxreturn($data);
-			exit;
-
-		$data['status']  = false;
-			$data['content'] = '成功';
-			$this->ajaxreturn($data);
-
-		$this->display("index");
+		$this->ajaxreturn($data);
 	}
-
+	function logout(){
+		cookie('auth', null);
+		cookie('uid',null);
+		$this->display("Index/index");
+	}
 	function verify(){
 		$config =    array(
 						'fontSize'    =>    50,    // 验证码字体大小 

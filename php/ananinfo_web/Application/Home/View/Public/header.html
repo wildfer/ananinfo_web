@@ -50,7 +50,14 @@
                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
                             <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="/?c=Users&a=index"><i>登陆/注册</i></a></li>
+
+
+                            <notempty name="uid">
+                                    <li><a href="/?c=Users&a=index">欢迎，{$userInfo['user_nicename']}</a></li>
+                                    <li><a href="/?c=Users&a=logout">退出</a></li>
+                                <else/>
+                                    <li><a href="/?c=Users&a=index">登陆/注册</a></li>
+                            </notempty>
                         </ul>
                     </div> 
                 </div>

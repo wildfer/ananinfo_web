@@ -23,6 +23,15 @@ class UsersModel extends BaseModel {
 	 	$condition['user_phone'] = I('user_phone');
 		return $m->where($condition)->find();
 	 }
+	 /**
+	  * 获取用户
+	  */
+     public function getByUserByID($userID=0){
+	 	$m = M('users');
+	 	$condition= array();
+	 	$condition['id'] = $userID;
+		return $m->where($condition)->find();
+	 }
 
 	 /**
 	  * 新增
