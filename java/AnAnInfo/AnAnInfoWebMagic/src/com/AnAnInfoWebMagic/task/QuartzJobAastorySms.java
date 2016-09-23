@@ -25,13 +25,13 @@ public class QuartzJobAastorySms implements QuartzTask {
 
 //		req.setExtend("123456"); //会员ID
 		req.setSmsType("normal");//短信类型
-		req.setSmsFreeSignName("阿里大于");//短信签名 阿里大于“管理中心-短信签名管理”中的可用签名
+		req.setSmsFreeSignName("签名测试");//短信签名 阿里大于“管理中心-短信签名管理”中的可用签名
 
 		JSONObject rsJson = new JSONObject();
 		rsJson.put("code", "123456");
 		req.setSmsParamString(rsJson.toString());
 		req.setRecNum("13983143052");
-		req.setSmsTemplateCode("SMS_585014"); //模板ID 阿里大于“管理中心-短信模板管理”中的可用模板
+		req.setSmsTemplateCode("SMS_16095304"); //模板ID 阿里大于“管理中心-短信模板管理”中的可用模板
 		try {
 			AlibabaAliqinFcSmsNumSendResponse rsp = client.execute(req);
 			System.out.println(rsp.getBody());
